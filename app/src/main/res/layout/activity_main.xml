@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panel1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/costeServicio"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/coste"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/service_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/service_question"
+        android:layout_width="179dp"
+        android:layout_height="38dp"
+        android:text="@string/comofue"
+        app:layout_constraintBottom_toTopOf="@+id/opcion_veinte_porciento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/opciones_propina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/opcion_veinte_porciento"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_question">
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/redondeo"
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        android:checked="true"
+        android:text="@string/redondeo"
+        app:layout_constraintBottom_toTopOf="@+id/botonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calculo"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoPropina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultadoPropina"
+        android:layout_width="178dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/cantPropina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Cantidad de Propina: $10" />
+
+    <RadioButton
+        android:id="@+id/opcion_quince_porciento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal"
+        app:layout_constraintBottom_toTopOf="@+id/redondeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opcion_dieciocho_porciento"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/opcion_dieciocho_porciento"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/bien"
+        app:layout_constraintBottom_toTopOf="@+id/redondeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/opcion_veinte_porciento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incre"
+        app:layout_constraintBottom_toTopOf="@+id/opcion_dieciocho_porciento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="263dp"
+        android:layout_height="159dp"
+        android:contentDescription="@string/servPropina"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/granasador_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="123dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toTopOf="@+id/redondeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/opcion_dieciocho_porciento"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.697"
+        app:srcCompat="@drawable/waiter" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/servPropina"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costeServicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
