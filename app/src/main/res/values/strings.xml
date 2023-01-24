@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">KemeKomo</string>
+    <string name="app_name">BoteGracias</string>
     <string name="coste">Coste del servicio</string>
     <string name="comofue">¿Cómo fue el servicio?</string>
     <string name="incre">Fantástico (20%)</string>
-    <string name="bien">Bueno (18%)</string>
-    <string name="normal">Satisfecho (15%)</string>
-    <string name="redondeo">¿Redondeará la propina?</string>
-    <string name="calculo">Calcular</string>
-    <string name="cantPropina">Cantidad de Propina: %s</string>
+    <string name="bien">Bien (12%)</string>
+    <string name="normal">Correcto (8%)</string>
+    <string name="redondeo">¿Sin decimales?</string>
+    <string name="calculo">Calculando</string>
+    <string name="cantPropina">Montante Propina: %s</string>
     <string name="servPropina">SERVICIO DE PROPINAS</string>
 
 

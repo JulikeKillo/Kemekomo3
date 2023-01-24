@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         val porcentajePropinas = when (binding.opcionesPropina.checkedRadioButtonId) {
             R.id.opcion_veinte_porciento -> 0.20
-            R.id.opcion_dieciocho_porciento -> 0.18
-            else -> 0.15
+            R.id.opcion_dieciocho_porciento -> 0.12
+            else -> 0.08
         }
 
 
